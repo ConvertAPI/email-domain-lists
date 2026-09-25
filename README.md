@@ -30,9 +30,7 @@ raxio.app        # temp-mail.id, reported 2026-09-25
 ## Changing a list
 
 - **Domains only.** Never commit an e-mail address, a name or anything else about a person.
-- Changes go through a pull request, which needs one approval from someone other than its author and a passing `check` job. The check (`python3 check.py`) rejects:
-  - malformed or duplicate entries;
-  - a domain that is in both files;
-  - a `disposable.txt` entry that would block a major provider (the `NEVER` list in [`check.py`](check.py)).
+- **Changes go through a pull request into `main`.** Direct pushes are blocked, but no approval or checks are needed, so whoever merges is responsible for the entry.
+- **Never add a large provider or a shared suffix to `disposable.txt`.** An entry also blocks every domain under it, so `co.uk` would block `hotmail.co.uk`.
 - **For `disposable.txt`**, say in the pull request why the domain is disposable, for example a temp-mail site offering it or a checker such as UserCheck. Consider reporting it to the public lists too.
 - **For `exclude.txt`**, say which public list has it wrong and why the domain is legitimate. Reporting it to that list gets it fixed at the source.
