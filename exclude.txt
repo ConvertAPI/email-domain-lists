@@ -1,0 +1,6 @@
+# Legitimate e-mail domains that a public disposable list gets wrong. ConvertAPI removes these
+# from the merged block list, so sign-ups from them go through. Exact domains only: excluding
+# example.com does not unblock temp.example.com. One domain per line, lower case; a note may
+# follow the domain after a space. See README.md before adding one.
+
+mailbox.org      # paid German provider; listed by TempMailDetector (ConvertAPI/ca-web#1368)

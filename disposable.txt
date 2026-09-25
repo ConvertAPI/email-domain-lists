@@ -1,0 +1,5 @@
+# Disposable e-mail domains that ConvertAPI blocks at sign-up on top of the public lists.
+# Only domains the public lists miss belong here. One domain per line, lower case; a note may
+# follow the domain after a space. See README.md before adding one.
+
+raxio.app        # temp-mail.id; on none of the public lists ca-web used on 2026-09-25 (ConvertAPI/ca-web#1368)
