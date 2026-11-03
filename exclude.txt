@@ -4,3 +4,4 @@
 # follow the domain after a space. See README.md before adding one.
 
 mailbox.org      # paid German provider; listed by TempMailDetector (ConvertAPI/ca-web#1368)
+vandorp.eu       # Dutch building-services company, Microsoft 365 mail; listed by disposable.github.io
